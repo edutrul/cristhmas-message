@@ -35,7 +35,7 @@ if ($_SESSION['sendmail']) {
       <img src="https://graph.facebook.com/<?php print $img_fb[3];?>/picture?width=550"><br>
       Te lo deseo con mucho cariño y estimo. Yo <?php print $_GET['txt_from_name']; ?>
       <?php print $_GET['txt_to_message']; ?>
-      <br>
+      <br><br>
       <a href="http://cristhmas.testingmenow.com">Envia postales gratuitos Click Aqui!</a>
     </div>
 
