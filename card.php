@@ -29,7 +29,7 @@ if ($_SESSION['sendmail']) {
 
 <?php $img_fb = explode('/', $_GET['txt_to_linkfbaccount']); ?>
     <div id="page-wrap-card">
-      <h1>Feliz Navidad <?php print $_GET['txt_to_name']; ?></h1>
+      <h1>Feliz Navidad <?php print $_GET['txt_from_name']; ?></h1>
       <img src="https://graph.facebook.com/<?php print $img_fb[3];?>/picture?width=550"><br>
       Te lo deseo con mucho cariño y estimo. Yo <?php print $_GET['txt_from_name']; ?>
       <?php print $_GET['txt_to_message']; ?>
