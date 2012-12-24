@@ -18,13 +18,13 @@
 <?php
 
 if ($_SESSION['sendmail']) {
+  $actual_link = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
   $to = $_GET['txt_to_mail'];
   $subject = $_GET['txt_from_name'] . ': Te Regalo una Tarjeta Virtual';
-  $message = $_GET['txt_to_message'] . ' <br><br>
-  <a href="cristhmas.testingmenow.com"> Abre tu Tarjeta Virtual!</a>';
+  $message = $_GET['txt_to_message'] . ' Abre tu Tarjeta Virtual! ' . $actual_link;
   $from = $_GET['txt_to_mail'];
   $headers = 'From:' . $from;
-  print mail($to, $subject, $message, $headers) ? '<span>Mensaje Enviado a!' . $_GET['txt_to_mail'] . '</span>' : '';
+  print mail($to, $subject, $message, $headers) ? '<span id="mail-successful">Mensaje Enviado a! ' . $_GET['txt_to_mail'] . '</span>' : '';
   
 }
 ?>

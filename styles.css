@@ -39,3 +39,9 @@ p {
   Serif; margin: 0 0 30px 0; 
   text-indent: 40px; 
 }
+
+#mail-successful {
+  background-color: greenYellow;
+  font-size: 15px;
+  font-weight: bolder;
+}
