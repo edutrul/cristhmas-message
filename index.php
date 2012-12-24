@@ -1,4 +1,7 @@
-
+<?php 
+  session_start();
+  $_SESSION['sendmail'] = TRUE;
+?>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +11,7 @@
 <script type="text/javascript" src="prettyForms/prettyForms.js"></script>
 <link rel="stylesheet" href="prettyForms/prettyForms.css" type="text/css" media="screen" />
   
-  <title>Envia un Mensaje navideño a tu ser querido(a)</title>
+  <title>Envia un Mensaje Navideño a tu ser querido(a)</title>
   
 </head>
 <body onload="prettyForms()">
@@ -56,8 +59,4 @@
 	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-68528-29']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga); })();
 </script>
 </body>
-<?php 
-  session_start();
-  $_SESSION['sendmail'] = TRUE;
-?>
 </html>

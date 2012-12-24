@@ -1,4 +1,6 @@
-
+<?php 
+  session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -22,8 +24,8 @@ if ($_SESSION['sendmail']) {
   <a href="cristhmas.testingmenow.com"> Abre tu Tarjeta Virtual!</a>';
   $from = $_GET['txt_to_mail'];
   $headers = 'From:' . $from;
-  print (int)mail($to, $subject, $message, $headers);
-  print "Mail Sent.";
+  print mail($to, $subject, $message, $headers) ? '<span>Mensaje Enviado a!' . $_GET['txt_to_mail'] . '</span>' : '';
+  
 }
 ?>
 
