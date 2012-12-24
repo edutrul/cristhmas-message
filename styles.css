@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; }
+
+html { 
+  background: url(http://2.bp.blogspot.com/-QYmsZCI8s9U/TvyJRP1f05I/AAAAAAAACLY/CiS_K-Q0EZE/s1600/feliz-navidad.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#page-wrap { 
+  width: 580px;
+  margin: 50px auto; 
+  padding: 20px; 
+  background: white; 
+  -moz-box-shadow: 0 0 20px black; 
+  -webkit-box-shadow: 0 0 20px black; 
+  box-shadow: 0 0 20px black; 
+}
+
+#page-wrap-card { 
+  width: 650px;
+  margin: 50px auto; 
+  padding: 20px; 
+  background: white; 
+  -moz-box-shadow: 0 0 20px black; 
+  -webkit-box-shadow: 0 0 20px black; 
+  box-shadow: 0 0 20px black; 
+}
+
+#page-wrap-card h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #227B38;
+} 
+
+p { 
+  font: 15px/2 Georgia, 
+  Serif; margin: 0 0 30px 0; 
+  text-indent: 40px; 
+}
